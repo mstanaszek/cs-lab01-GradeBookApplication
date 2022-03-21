@@ -16,10 +16,11 @@ namespace GradeBook.GradeBooks
         public List<Student> Students { get; set; }
 
         public GradeBookType Type { get; set; }
-        public BaseGradeBook(string name)
+        public BaseGradeBook(string name, bool IsWeight)
         {
             Name = name;
             Students = new List<Student>();
+            IsWeighted = IsWeight;
         }
 
         public void AddStudent(Student student)
